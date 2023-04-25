@@ -1,0 +1,38 @@
+{% extends 'Basem.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'res.css' %}">
+{% endblock %}
+{% block script%}
+<script type="text/javascript" src="{% static 're.js' %}"></script>
+{% endblock %}
+
+{% block content  %}
+<section>
+	<nav>
+		<ul>
+			<l1><a href="..">Back</a></l1>
+		</ul>
+	</nav>
+	<header>Plagcheck</header>
+	<div id="circle">
+		<h2>{{simm}} %</h2>
+	</div>
+	<h1 hidden>Your Result are Compiling.</h1>
+	
+	<div id="textpage">
+		<div class="detail">
+			<ul id="crap">
+				<li>{{date}}</li>
+				<li >{{time}}</li>
+			</ul>
+		</div>
+	<div>
+		{{text}}
+	</div>	
+	</div>
+
+
+</section>
+{% endblock%}

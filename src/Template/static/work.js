@@ -1,20 +1,20 @@
 const dropArea = document.querySelector(".drag-area"),
 dragText = dropArea.querySelector("header"),
 button = dropArea.querySelector("button"),
-input = dropArea.querySelector("input"),
-submit = document.querySelector("#jick"),
-textbox = dropArea.querySelector("textarea");
+textbox = dropArea.querySelector("textarea"),
+input = dropArea.querySelector("input[type=file]"),
+submit = dropArea.querySelector("input[type=submit]"),
+but = dropArea.querySelector("Button"),
+b = document.querySelector("body");
 let file; 
 
 
-button.onclick = ()=>{
-  if(textbox.value == "")
-    input.click();
-  else{
-    console.log("sick")
-    submit.click();
-  } 
-}
+b.addEventListener('click', () =>{
+  if(!textbox.value){
+    button.innerHTML = "Upload Files";
+  }
+});
+
 
 input.addEventListener("change", function(){
   file = this.files[0];
@@ -22,6 +22,15 @@ input.addEventListener("change", function(){
   showFile(); 
 });
 
+
+
+but.addEventListener('click', () => {
+  if(!textbox.value){
+    input.click();
+  }
+  submit.click();
+
+});
 
 textbox.addEventListener("input", () =>{
   button.innerHTML = "Submit"
@@ -54,9 +63,10 @@ function showFile(){
   console.log(fileType)
   let validExtensions = ["text/plain", "application/msword"]; 
   if(validExtensions.includes(fileType)){ 
-    submit.click()
-
-    
+    textbox.remove();
+    dragText.innerHTML = "Your file is of valid formate and ready to be scaned"
+    button.innerHTML = "Submit"
+  
   }else{
     alert("This is not an proper File!");
     dropArea.classList.remove("active");

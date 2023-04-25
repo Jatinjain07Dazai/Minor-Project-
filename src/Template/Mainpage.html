@@ -6,10 +6,20 @@
   font-family: Arial Black;
   dominant-baseline: central;
   text-anchor: middle;
-}</style></svg>
+  animation: clim 1s ease-in;
+}
+@keyframes clim{
+  100%{
+    transform: rotateY(180deg);
+  }
+
+}
+
+
+</style></svg>
 
 <div id="box">
-<div class="card">
+<div class="card" id="red">
   <div class="step">1</div>
   <div class="textbox"> Visit the Plagcheck.in and allow accept the cookies.</div>
 </div>
@@ -20,22 +30,26 @@
   <div class="textbox"> Write text in the box nearby or upload your pdf on the dropbox to check for Plagarism.</div>
 </div>
 
-<div class="card">
+<div class="card" id="blue">
   <div class="step">3</div>
-  <div class="textbox"> Wait till the file is being proccesed. The result may arrive soon. Once the result is loaded download the report from result Page.
-If error occure please contact us.</div>
+  <div class="textbox"> 
+  Wait till the file is being proccesed. The result may arrive soon. Once the result is loaded download the report from result Page.
+  If error occure please contact us.
+  </div>
 </div>
+
 </div>
 
 
 </div>
 <div class="drag-area">
-<header>Type text or upload pdf Here !!!</header>
-<div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-<textarea placeholder="Write your text !!!"></textarea>
-<button>Browse File</button>
-<input type="file" name="sub" hidden>
-<input id="jick" type="submit"  hidden>
+<form action="{% url 'result' 6 %}" method="POST" style="height:100; width: 100;">{% csrf_token %}
+<header>Type text or Upload File !!!</header>
+<textarea placeholder="Write your text !!!" name="text"></textarea>
+<Button>Upload Files </Button>
+<input type="file" name="file" hidden>
+<input type="submit" name="sub" hidden>
+</form>
 </div>
 
 {% endblock %}

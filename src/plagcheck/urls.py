@@ -21,5 +21,5 @@ from paras.views import home_view, result_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
-    path('results/', result_view, name='result')
+    path('results/<int:mid>/', result_view, name='result')
 ]
