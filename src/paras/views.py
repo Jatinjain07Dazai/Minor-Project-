@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import databook
 import random
 from algo.tfdif import * 
@@ -11,7 +11,7 @@ def home_view(request):
 
 
 
-def result_view(requests, mid):
+def result_view(requests):
 	if requests.POST:
 		if len(s:=requests.POST['text'])  > 25:
 			l = {}
@@ -21,12 +21,13 @@ def result_view(requests, mid):
 
 			finale = l[max(l.keys())]
 			obj = concordance_reporter(fn1=s, fn2=finale[0])
-			s = """"""
+			u = """"""
 			for o in obj:
-				s += o
-				s += "\n\n"
+				u += o
+				u += "\n"
 
 			dumb_data = {
+				"res" : u, 
 				"simm": max(l.keys()),
 				"text": s,
 				"date": finale.pop(),
@@ -34,4 +35,4 @@ def result_view(requests, mid):
 				}
 			return render(requests, "Results.html", dumb_data)
 		else:
-			return render(requests, "Mainpage.html", {"error": "* string too small to Compare please provide text more than 25 words"})
+			return render(requests, "Mainpage.html", {"error": "The Text is not of adequate length to be proccessed for Plagiarism Check."})

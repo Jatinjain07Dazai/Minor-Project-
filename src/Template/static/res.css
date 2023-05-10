@@ -117,3 +117,56 @@ h1{
   overflow: none;
   margin-bottom: 20px ;
 }
+
+#viewarea{
+  min-width: 80vw;
+  min-height: 40vh;
+  position: relative;
+  margin: 5vw, 40px;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 8px;
+  border-color: red;
+}
+
+.distext{
+  padding: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin-right: 80px;
+  border: solid;
+  border-color: #222;
+  border-width: 4px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

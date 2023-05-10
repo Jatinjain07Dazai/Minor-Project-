@@ -46,7 +46,7 @@
 </div>
 <div class="drag-area">
   <span style="color:red; font-size: .9rem">{{error}}</span>
-<form action="{% url 'result' 6 %}" method="POST" style="height:100; width: 100;">{% csrf_token %}
+<form action="{% url 'result' %}" method="POST" style="height:100; width: 100;">{% csrf_token %}
 <header>Type text or Upload File !!!</header>
 <textarea placeholder="Write your text !!!" name="text"></textarea>
 <Button>Upload Files </Button>
