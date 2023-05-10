@@ -4,9 +4,14 @@ Django Based Plagarism Checker for marks
 
 ## Current Progress 
 
+# commands to runsever
+![image](https://github.com/Jatinjain07Dazai/Minor-Project-/assets/72065165/cde3a81c-2916-4a8b-bfe0-6a5a66e7875c)
+
 # MainPage
-![image](https://user-images.githubusercontent.com/72065165/234357420-d85fd70c-9543-442b-81e4-b44bca3b4a7a.png)
+![image](https://github.com/Jatinjain07Dazai/Minor-Project-/assets/72065165/c2d0578f-b374-4bd2-b6ee-439b6111b0c8)
+
 
 # Result Page
-![image](https://user-images.githubusercontent.com/72065165/234357802-4f1c7df0-47ab-4d58-9d09-7b7e84ffe263.png)
+![image](https://github.com/Jatinjain07Dazai/Minor-Project-/assets/72065165/5089dc95-f837-418b-8af8-cf27f518400a)
+
 
