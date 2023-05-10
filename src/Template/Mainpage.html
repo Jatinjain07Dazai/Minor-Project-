@@ -18,6 +18,8 @@
 
 </style></svg>
 
+
+
 <div id="box">
 <div class="card" id="red">
   <div class="step">1</div>
@@ -43,6 +45,7 @@
 
 </div>
 <div class="drag-area">
+  <span style="color:red; font-size: .9rem">{{error}}</span>
 <form action="{% url 'result' 6 %}" method="POST" style="height:100; width: 100;">{% csrf_token %}
 <header>Type text or Upload File !!!</header>
 <textarea placeholder="Write your text !!!" name="text"></textarea>

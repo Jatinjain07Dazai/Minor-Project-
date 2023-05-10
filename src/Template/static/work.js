@@ -27,6 +27,7 @@ input.addEventListener("change", function(){
 but.addEventListener('click', () => {
   if(!textbox.value){
     input.click();
+    return 0
   }
   submit.click();
 

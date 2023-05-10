@@ -6,10 +6,9 @@
 }
 
 body{
-	background-image: url('beck.jpg');
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: gray;
+  background-color: #FA8128;
 }
 
 header{
