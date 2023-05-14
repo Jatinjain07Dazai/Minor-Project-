@@ -86,6 +86,12 @@ h1{
   border: solid;
   border-radius: 50%;
   border-width: 8px;
+}
+
+#circle:after{
+  position: absolute;
+  content: "Simmilarity Score";
+  margin-top: 5%;
 
 }
 
@@ -125,7 +131,6 @@ h1{
   margin: 5vw, 40px;
   padding: 10px 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
   border: solid;
   border-width: 8px;
@@ -138,6 +143,9 @@ h1{
   align-items: center;
   justify-content: center;
   width: 40%;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin-right: 80px;
   border: solid;
   border-color: #222;
@@ -148,10 +156,39 @@ h1{
 
 
 
+#target{
+  height: fit-content;
+  display: block;
+}
+
+span{
+  display: flex;
+  justify-content: center;
+}
+
+#result{
+  display: block;
+  height: fit-content;
+}
+
+#src{
+  height: fit-content;
+  display: block;
+}
 
 
+h3{
+  font-family: fantasy;
+  font-size: 1.4rem;
+  color: floralwhite;
+  font-weight: 900;
+}
 
-
+header{
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
 
 
 

@@ -85,7 +85,7 @@ def n_concordance(txt,phrase,left_margin=0,right_margin=0):
     outputs=[''.join([x+' ' for x in con_sub]) for con_sub in concordance_txt]
     return outputs
  
-def concordance_reporter(fn1='1.txt', fn2='2.txt',fo='3.txt',ngram_min=6,ngram_max=10, left_margin=0,right_margin=0,n=5):
+def concordance_reporter(fn1='1.txt', fn2='2.txt',fo='3.txt',ngram_min=6,ngram_max=10, left_margin=2,right_margin=2,n=5):
     fo=fo.replace('.txt','_ngram_rep{}.txt'.format(n))
     results = []
     f=open(fo, 'w+')
@@ -102,17 +102,13 @@ def concordance_reporter(fn1='1.txt', fn2='2.txt',fo='3.txt',ngram_min=6,ngram_m
         
         i = 0
         for m in ngrams:
-            output = """"""
+            output = []
             i += 1
             mt=' '.join(m)
-            output += f"{i}" + mt + "\n\n "
-            # outfile.write('\n\-------\n{}\n\n'.format(mt.encode('utf8')))
-
+            output.append(f"{i}  " + mt)
             for c in n_concordance(txt1,mt,left_margin,right_margin):
-                # outfile.write('<<<<>>>>{}\n\n'.format(c.encode('utf8')))
-                output += f"{i}.{i}"+ c + "\n"
+                output.append(f"{i}.{i}  "+ c) 
             results.append(output)
-    
     return results
 
 

@@ -1,16 +1,6 @@
-REPORT FOR (However, as organizations pursue digital transformation and adopt hybrid cloud environments, networks are becoming decentralized. Now, network resources exist across cloud data centers, on-site and remote endpoints, and mobile and IoT devices.
+REPORT FOR (A firewall is software or hardware that stops suspicious traffic from entering or leaving a network while letting legitimate traffic through. Firewalls can be deployed at the edges of a network or used internally to divide a larger network into smaller subnetworks. If one part of the network is compromised, hackers are still shut off from the rest. and Firewalls
 
-Perimeter-based security controls are less effective in distributed networks, so many IT security teams are shifting to zero-trust network security frameworks. Instead of focusing on the perimeter, zero-trust network security places security controls around individual resources. 
+A firewall is software or hardware that stops suspicious traffic from entering or leaving a network while letting legitimate traffic through. Firewalls can be deployed at the edges of a network or used internally to divide a larger network into smaller subnetworks. If one part of the network is compromised, hackers are still shut off from the rest.
 
-nnect directly to the internet but to a secure server that connects to the internet on their behalf.
-
-VPNs can help remote workers securely access corporate networks, even through unsecured public wifi connections like those found in coffee shops and airports. VPNs encrypt a user's traffic, keeping it safe from hackers who might want to intercept their communications.
-
-Instead of VPNs, some o
-horizing users to determine who is allowed into the network and what they can do inside. "Authentication" means verifying that a user is who they claim to be. "Authorization" m
- and Traditional company networks were centralized, with key endpoints, data, and apps located on premises. Traditional network security systems focused on keeping threats from breaching the network's perimeter. Once a user got in, they were treated as trustworthy and granted practically unrestricted access.
-
-However, as organizations pursue digital transformation and adopt hybrid cloud environments, networks are becoming decentralized. Now, network resources exist across cloud data centers, on-site and remote endpoints, and mobile and IoT devices.
-
-Perimeter-based security controls are less effective in distributed networks, so many IT security teams are shifting to zero-trust network security frameworks. Instead of focusing on the perimeter, zero-trust network security places security controls around individual resources. Users are never implicitly trusted. Every time a user tries to access a resource, they must be authenticated and authorized, regardless of whether they're already on the company network. Authenticated users are only granted least-privilege access, and their permissions are revoked as soon as their task is done.
+There are different types of firewalls with different features. Basic firewalls use packet filtering to inspect traffic. More advanced next-generation firewalls (NGFWs) add intrusion prevention, AI and machine learning, application awareness and control, and threat intelligence feeds for extra protection.
 

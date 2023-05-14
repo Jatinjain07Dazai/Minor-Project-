@@ -49,7 +49,7 @@
 <form action="{% url 'result' %}" method="POST" style="height:100; width: 100;">{% csrf_token %}
 <header>Type text or Upload File !!!</header>
 <textarea placeholder="Write your text !!!" name="text"></textarea>
-<Button>Upload Files </Button>
+<Button class="upl">Submit</Button>
 <input type="file" name="file" hidden>
 <input type="submit" name="sub" hidden>
 </form>
