@@ -1,0 +1,105 @@
+{% extends 'Basem.html' %}
+
+{% load static %}
+{% block content  %}
+<style>
+	body{
+		animation: unset;
+		background-color: blueviolet;
+		background-image: unset;
+	}
+	h1{
+		display: flex;
+		justify-content: center;
+		color: #fff;
+	}
+
+	textarea{
+		all:unset;
+		margin: 20px 10%;
+		height:70%;
+		width: 80%;
+		display: block;
+		border: 2px solid;
+		font-size: 1.2rem;
+		padding: 10px;
+	}
+
+	form{
+		margin:20px 10vw;
+		height: 70vh;
+		width: 80vw;
+		padding: 20px;
+		background-color: #D4B2FA;
+	}
+
+	p{
+		position: absolute;
+		font-size: 1rem;
+		top: 16vh;
+		left: 40vw;
+	}
+	button{
+		display: block;
+		height: 60px;
+		width: 200px;
+		margin-left: 38%;
+		background-color: #444;
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	label{
+		font-size: 1.4rem;
+		font-weight: 500;
+		font-family: sans-serif cursive;
+		color: #fff;
+	}
+
+
+</style>
+<ul>
+<l1><i><a href="../facmain"><img style="position: absolute; margin: 10px; height: 40px; width:40px" src="{% static 'previous.png' %}"></img></a></i></l1>
+</ul>
+
+<h1>Type Your text in Textbox</h1>
+<form method="POST"> {% csrf_token %}
+
+<p>{{msg}}</p>
+<header>
+<div>
+<label id="first" for="aut">Author:-</label>
+<select name="Author" id="aut">
+    <option value="Prof. Gaurav Shrivastava">Prof. Gaurav Shrivastava</option>
+    <option value="Prof. Shrikant Telang">Prof. Shrikant Telang</option>
+    <option value="Prof. Rashmi Chohuan">Prof. Rashmi Chohuan</option>
+    <option value="Prof. Gaurav Venchurkar">Prof. Gaurav Venchurkar</option>
+    <option value="Prof. Jitendra Sharma">Prof. Jitendra Sharma</option>
+    <option value="Prof. Jagrati Nagadiya">Prof. Jagrati Nagadiya</option>
+</select>
+</div>
+<div>
+<label id="last" for="sub">Subject:-</label>
+<select name="subject" id="sub">
+    <option value="Network Security and Cryptography">Network Security and Cryptography</option>
+    <option value="Ethical Hacking Lab">Ethical Hacking Lab</option>
+    <option value="Cloud Computing">Cloud Computing</option>
+    <option value="Theory of Computation">Theory of Computation</option>
+    <option value="Blockchain">Blockchain</option>
+    <option value="Data Science">Data Science</option>
+</select>
+</div>
+</header>
+<textarea placeholder="Type..." name="text"></textarea>
+<Button>Submit</Button>
+<input type="submit" hidden>
+</form>
+
+{% endblock %}

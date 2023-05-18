@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title>Page for Picking Role</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'rol.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+
+	body{
+		background: #b92b27;  
+		background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  
+		background: linear-gradient(to right, #1565C0, #b92b27); 
+	}
+
+	h1{
+		margin: 5px 10px;
+		color: #ccc;
+	}
+
+	h2{
+
+		margin:20px 26%;
+	}
+
+	.card{
+		margin: 10px 120px;
+	}
+
+	#add{
+		background: #fc4a1a;
+		background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  
+		background: linear-gradient(to right, #f7b733, #fc4a1a); 
+		transition: all .4s;
+		animation: axis 1.6s ;
+	}
+
+	#add:hover{
+		margin-top: -10px;
+	}
+
+	#check:hover{
+		margin-top: -10px;
+	}
+
+	#check{
+		background: #8E2DE2; 
+		background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
+		background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+		transition: all .4s;
+		animation: axis 1.6s;
+	}
+
+	@keyframes axis{
+		0%{
+			transform: rotate(180deg);
+
+		}
+		100%{
+			transform: rotate(0deg);
+		}
+	}
+
+
+</style>
+
+<h1>Plagcheck</h1>
+
+<h2> What would You like to perform ?</h2>
+<section class="Role_sel">
+<div class="container">
+	<div class="card" id="add">
+		Add a New Record
+		<div class="sizing">
+		<a href="../addnew/" style="text-decoration: none; color: inherit;">
+		<img style="height:80%; width:80%;" src="{% static 'add.png' %}" alt="Add Record">
+		</div>
+	</div>
+
+
+	<div class="card" id="check">
+		<div>Check For Plagarism<a href="../check" style="text-decoration: none; color: inherit;"></div>
+	<div class="sizing" >
+	<img style="height:80%; width: 80%;" src="{% static 'check.png' %}" alt="Check Record">
+	</div>
+	</div>	
+</div>
+</section>
+
+</body>
+</html>

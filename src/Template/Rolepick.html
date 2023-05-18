@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<title>Page for Picking Role</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'rol.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="t_area">
+	<h1>Plagcheck</h1>
+	<div id="abstract">Plagiarism is the fraudulent representation of another person's language, thoughts, ideas, or expressions as one's own original work. Although precise definitions vary, depending on the institution, such representations are generally considered to violate academic integrity and journalistic ethics as well as social norms of learning, teaching, research, fairness, respect and responsibility in many cultures. This collaborative project made by me and my friends focus on producing a robust system for storing academic records and documents and also ensure academic integrity by illustrating Plagiarised Text, by both the faculties and students. </div>
+	<h2>Choose Your Role</h2>
+</section>
+
+<section class="Role_sel">
+<div class="container">
+	<div class="card" id="fac">
+		Faculty
+		<div class="sizing">
+		<a href="login/" style="text-decoration: none; color: inherit;">
+		<img style="height:100%; width:100%;" src="{% static 'fac.svg' %}">
+		</div>
+	</div>
+
+
+	<div class="card" id="stu">
+		<div>Student <a href="loginu/" style="text-decoration: none; color: inherit;"></div>
+	<div class="sizing" >
+	<img style="height:100%; width: 100%;" src="{% static 'stu.svg' %}">
+	</div>
+	</div>	
+</div>
+</section>
+
+</body>
+</html>

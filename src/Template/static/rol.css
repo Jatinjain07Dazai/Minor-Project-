@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+h1{
+	color: aliceblue;
+	font-size: 3.4rem;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 1.2rem;
+	margin-left: 35%;
+	margin-top: 20px;
+	animation: ent 1.2s;
+}
+
+@keyframes ent{
+	0%{
+		transform-origin: left;
+		transform: scale(.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+
+.t_area{
+	display: block;
+	justify-content: center;
+	height: 30vh;
+	color: ghostwhite;
+}
+
+#abstract{
+	height: 40%;
+	width: 60%;
+	margin: 30px 18rem;
+	word-wrap: break-word;
+	font-family: fantasy;
+	font-weight: 600;
+	font-size: 1rem;
+	text-align: justify; 
+	animation: ent 1s;
+}
+
+
+h2{
+	font-family: "Anton" ;
+	font-size: 2rem;
+	margin-left: 36%;
+	letter-spacing: .2em;
+	color: royalblue;
+	animation: ent 1s;
+
+}
+
+
+.Role_sel{
+	display:flex;
+	background: inherit;
+	height: 70vh;
+	align-items: center;
+	justify-content:center;
+	margin-top: 20px;
+}
+
+.container{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+}
+
+.card{
+	height: 320px;
+	width: 300px;
+	border-radius: 1rem;
+	padding: 20px;
+	font-family: 'Anton', sans-serif;
+	color: white;
+	font-size: 1.4rem;
+	letter-spacing: .5em;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+	backdrop-filter: blur(5px);
+}
+
+
+#fac:hover{
+	transform:translateY(-20px);
+		
+}
+
+#stu:hover{
+	transform:translateY(-20px);		
+}
+
+#fac{
+	margin-right: 200px;
+	background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+	transition: all .4s;
+	animation: right 1.6s ;
+	 }
+
+
+#stu{
+	background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+	transition: all .4s;
+	animation: left 1.6s;
+}
+
+.sizing{
+	height: 80%;
+	width: 80%;
+	margin: 20px 30px;
+}
+
+@keyframes left{
+	0%{
+		margin-left: -500px;
+	}
+	100%{
+		margin-left: inherit;
+		
+	}
+}
+

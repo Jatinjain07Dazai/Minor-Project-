@@ -1,6 +1,10 @@
-REPORT FOR (A firewall is software or hardware that stops suspicious traffic from entering or leaving a network while letting legitimate traffic through. Firewalls can be deployed at the edges of a network or used internally to divide a larger network into smaller subnetworks. If one part of the network is compromised, hackers are still shut off from the rest. and Firewalls
+REPORT FOR (Understanding the types of cloud computing resources can be time-consuming and costly. Enterprises need to buy physical servers and other infrastructure through procurement processes that can take months, and support the architecture of cloud computing. The acquired systems require a physical space, typically a specialized room with sufficient power and cooling. After configuring and deploying the systems, enterprises need expert personnel to manage them.
 
-A firewall is software or hardware that stops suspicious traffic from entering or leaving a network while letting legitimate traffic through. Firewalls can be deployed at the edges of a network or used internally to divide a larger network into smaller subnetworks. If one part of the network is compromised, hackers are still shut off from the rest.
+This long process is difficult to scale when demand spikes or business expands. Enterprises can acquire more computing resources than needed, ending up with low utilization numbers.
 
-There are different types of firewalls with different features. Basic firewalls use packet filtering to inspect traffic. More advanced next-generation firewalls (NGFWs) add intrusion prevention, AI and machine learning, application awareness and control, and threat intelligence feeds for extra protection.
+Cloud computing addresses these issues by offering computing resources as scalable, on-demand services. Learn more about Google Cloud, a suite of cloud computing service models offered by Google. and Understanding the types of cloud computing resources can be time-consuming and costly. Enterprises need to buy physical servers and other infrastructure through procurement processes that can take months, and support the architecture of cloud computing. The acquired systems require a physical space, typically a specialized room with sufficient power and cooling. After configuring and deploying the systems, enterprises need expert personnel to manage them.
+
+This long process is difficult to scale when demand spikes or business expands. Enterprises can acquire more computing resources than needed, ending up with low utilization numbers.
+
+Cloud computing addresses these issues by offering computing resources as scalable, on-demand services. Learn more about Google Cloud, a suite of cloud computing service models offered by Google.
 

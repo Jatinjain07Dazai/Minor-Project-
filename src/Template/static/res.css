@@ -90,7 +90,7 @@ h1{
 
 #circle:after{
   position: absolute;
-  content: "Simmilarity Score";
+  content: "Similarity Score";
   margin-top: 5%;
 
 }
