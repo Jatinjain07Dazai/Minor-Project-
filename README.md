@@ -15,3 +15,4 @@ Django Based Plagarism Checker for marks
 ![image](https://github.com/Jatinjain07Dazai/Minor-Project-/assets/72065165/5089dc95-f837-418b-8af8-cf27f518400a)
 
 
+## Video Preview
